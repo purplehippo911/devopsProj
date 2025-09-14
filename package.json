@@ -4,15 +4,21 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\"",
-    "build": "echo \"No build step defined\""
+    "test": "jest --watchAll --verbose --coverage",
+    "build": "echo \"No build step defined\"",
+    "e2e": "cypress open"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "cypress": "^15.2.0",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3"
   }
 }
