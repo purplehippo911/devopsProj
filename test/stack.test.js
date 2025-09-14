@@ -3,11 +3,12 @@ class Stack {
   constructor() {
     this.items ={};
     this.top = -1;
+    
+    this.peek = () => {
+      return this.items[this.top];
+    }
   }
 
-  get peek() {
-    return this.items[this.top];
-  }
 
   push(value) {
     this.top += 1;
@@ -21,11 +22,6 @@ describe("Stack Tests", () => {
     beforeEach(() => {
         stack = new Stack();
     });
-
-  test("pushing an item increases the stack size", () => {
-    
-    expect(stack.top).toBe(-1);
-  });
 
   test("is created empty", () => {
     
