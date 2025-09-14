@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "jest --verbose --coverage",
-    "build": "echo \"No build step defined\"",
+    "build": "docker build -t myapp .",
+    "runDocker": "docker run -p 3000:3000 myapp",
     "e2e": "cypress open"
   },
   "dependencies": {
@@ -21,4 +22,4 @@
     "@types/jest": "^30.0.0",
     "jest": "^30.1.3"
   }
-}
+} 

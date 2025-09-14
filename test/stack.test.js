@@ -19,4 +19,14 @@ describe("Stack Tests", () => {
         stack = new Stack();
     });
 
+    test("Push Operation", () => {
+        stack.push(10);
+        expect(stack.items[stack.top]).toBe(10);
+        expect(stack.top).toBe(0);
+
+        stack.push(20);
+        expect(stack.items[stack.top]).toBe(20);
+        expect(stack.top).toBe(1);
+    });
+
 });
