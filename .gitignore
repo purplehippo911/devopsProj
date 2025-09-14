@@ -1,0 +1,10 @@
+# Ignore environment files, build directories, and IDE settings
+/.env
+/dist
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+/node_modules
