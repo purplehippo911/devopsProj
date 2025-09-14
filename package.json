@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest --watchAll --verbose --coverage",
+    "test": "jest --verbose --coverage",
     "build": "echo \"No build step defined\"",
     "e2e": "cypress open"
   },

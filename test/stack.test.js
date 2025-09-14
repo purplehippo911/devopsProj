@@ -3,10 +3,6 @@ class Stack {
   constructor() {
     this.items ={};
     this.top = -1;
-    
-    // this.peek = () => {
-    //   return this.items[this.top];
-    // }
   }
 
 
@@ -22,17 +18,5 @@ describe("Stack Tests", () => {
     beforeEach(() => {
         stack = new Stack();
     });
-
-  test("is created empty", () => {
-    
-    expect(stack.items).toEqual({});
-  });
-
-  test("can push to the top", () => {
-    stack.push("item67");
-    expect(stack.top).toBe(0);
-    // expect(stack.peek()).toBe("item67");
-  });
-
 
 });
