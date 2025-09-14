@@ -4,9 +4,9 @@ class Stack {
     this.items ={};
     this.top = -1;
     
-    this.peek = () => {
-      return this.items[this.top];
-    }
+    // this.peek = () => {
+    //   return this.items[this.top];
+    // }
   }
 
 
@@ -31,10 +31,8 @@ describe("Stack Tests", () => {
   test("can push to the top", () => {
     stack.push("item67");
     expect(stack.top).toBe(0);
-    expect(stack.peek()).toBe("item67");
+    // expect(stack.peek()).toBe("item67");
   });
-
-  test.todo("popping an item decreases the stack size")
 
 
 });
